@@ -4219,3 +4219,343 @@
 2025-06-14 12:31:29,622 - __main__ - INFO - Generated 25 unique candidates from 25 total
 2025-06-14 12:31:29,634 - __main__ - INFO - Generated 10 recommendations in 2.03s
 2025-06-14 12:31:29,636 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 12:31:29] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-14 12:36:40,243 - __main__ - INFO - Loading data from product_data.xlsx
+2025-06-14 12:36:41,488 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-14 12:36:41,489 - __main__ - INFO - Categories: 182
+2025-06-14 12:36:41,489 - __main__ - INFO - Stores: 18
+2025-06-14 12:36:41,490 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-14 12:36:41,490 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-14 12:36:41,490 - __main__ - INFO - Starting PSO Product Recommendation API...
+2025-06-14 12:36:41,525 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-14 12:36:41,526 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-14 12:36:41,543 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-14 12:36:42,885 - __main__ - INFO - Loading data from product_data.xlsx
+2025-06-14 12:36:43,854 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-14 12:36:43,855 - __main__ - INFO - Categories: 182
+2025-06-14 12:36:43,855 - __main__ - INFO - Stores: 18
+2025-06-14 12:36:43,856 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-14 12:36:43,856 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-14 12:36:43,856 - __main__ - INFO - Starting PSO Product Recommendation API...
+2025-06-14 12:36:43,871 - werkzeug - WARNING -  * Debugger is active!
+2025-06-14 12:36:43,879 - werkzeug - INFO -  * Debugger PIN: 130-113-559
+2025-06-14 12:36:53,193 - __main__ - INFO - Filtered to 2226 items for optimization
+2025-06-14 12:36:53,252 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:36:53,278 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:36:53,279 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:36:53,280 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:36:53,936 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\np\\arraymath.py', reloading
+2025-06-14 12:36:59,358 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=393.74, Avg=-64250.61
+2025-06-14 12:36:59,359 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=416.74, Avg=-60196.83
+2025-06-14 12:36:59,384 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=401.98, Avg=-51583.43
+2025-06-14 12:36:59,404 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=398.21, Avg=-59054.41
+2025-06-14 12:36:59,872 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:36:59,878 - modified_pso_algorithm_v1 - INFO - Optimization completed in 6.68s
+2025-06-14 12:36:59,904 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:36:59,909 - modified_pso_algorithm_v1 - INFO - Optimization completed in 6.71s
+2025-06-14 12:36:59,981 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:36:59,986 - modified_pso_algorithm_v1 - INFO - Optimization completed in 6.79s
+2025-06-14 12:36:59,991 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:36:59,996 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,083 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,168 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 4
+2025-06-14 12:37:00,173 - modified_pso_algorithm_v1 - INFO - Optimization completed in 6.97s
+2025-06-14 12:37:00,187 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=397.60, Avg=-60059.54
+2025-06-14 12:37:00,189 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=428.79, Avg=-55647.75
+2025-06-14 12:37:00,193 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=405.95, Avg=-55181.40
+2025-06-14 12:37:00,326 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,390 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:00,394 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.41s
+2025-06-14 12:37:00,402 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:00,406 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.50s
+2025-06-14 12:37:00,422 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=411.15, Avg=-62490.04
+2025-06-14 12:37:00,496 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,547 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,703 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=431.13, Avg=-49485.41
+2025-06-14 12:37:00,750 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=368.93, Avg=-66468.99
+2025-06-14 12:37:00,751 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 0
+2025-06-14 12:37:00,754 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.34s
+2025-06-14 12:37:00,774 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:00,777 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.90s
+2025-06-14 12:37:00,783 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:00,789 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.62s
+2025-06-14 12:37:00,804 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:00,809 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.41s
+2025-06-14 12:37:00,826 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,857 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,874 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:00,913 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:01,004 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=400.00, Avg=-54586.45
+2025-06-14 12:37:01,006 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=427.96, Avg=-56411.81
+2025-06-14 12:37:01,062 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=403.02, Avg=-61370.38
+2025-06-14 12:37:01,067 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=389.51, Avg=-60102.27
+2025-06-14 12:37:01,230 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:01,234 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.44s
+2025-06-14 12:37:01,410 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:01,629 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=422.08, Avg=-46728.84
+2025-06-14 12:37:01,754 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:01,758 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.00s
+2025-06-14 12:37:01,805 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:01,811 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.03s
+2025-06-14 12:37:01,823 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:01,828 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.59s
+2025-06-14 12:37:01,852 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:01,899 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:01,930 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,024 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=357.94, Avg=-61643.86
+2025-06-14 12:37:02,024 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 0
+2025-06-14 12:37:02,027 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.27s
+2025-06-14 12:37:02,028 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 5
+2025-06-14 12:37:02,035 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.23s
+2025-06-14 12:37:02,047 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=386.31, Avg=-58881.63
+2025-06-14 12:37:02,048 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=396.36, Avg=-54718.91
+2025-06-14 12:37:02,132 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,134 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,326 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=429.66, Avg=-58636.80
+2025-06-14 12:37:02,347 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=411.12, Avg=-64294.23
+2025-06-14 12:37:02,536 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:02,541 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.51s
+2025-06-14 12:37:02,583 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:02,587 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.76s
+2025-06-14 12:37:02,649 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,666 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:02,671 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.63s
+2025-06-14 12:37:02,704 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,776 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:02,792 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=406.74, Avg=-63150.42
+2025-06-14 12:37:02,882 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=393.84, Avg=-58421.99
+2025-06-14 12:37:02,909 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 5
+2025-06-14 12:37:02,914 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.10s
+2025-06-14 12:37:02,952 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=407.73, Avg=-58464.80
+2025-06-14 12:37:03,035 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:03,127 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:03,132 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.46s
+2025-06-14 12:37:03,144 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:03,150 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.61s
+2025-06-14 12:37:03,157 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=400.07, Avg=-62423.65
+2025-06-14 12:37:03,214 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:03,310 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:03,315 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.73s
+2025-06-14 12:37:03,334 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=411.07, Avg=-62759.36
+2025-06-14 12:37:03,388 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:03,392 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.48s
+2025-06-14 12:37:03,495 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:03,501 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.37s
+2025-06-14 12:37:03,810 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-14 12:37:05,235 - __main__ - INFO - Loading data from product_data.xlsx
+2025-06-14 12:37:06,220 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-14 12:37:06,221 - __main__ - INFO - Categories: 182
+2025-06-14 12:37:06,221 - __main__ - INFO - Stores: 18
+2025-06-14 12:37:06,221 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-14 12:37:06,222 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-14 12:37:06,222 - __main__ - INFO - Starting PSO Product Recommendation API...
+2025-06-14 12:37:06,238 - werkzeug - WARNING -  * Debugger is active!
+2025-06-14 12:37:06,246 - werkzeug - INFO -  * Debugger PIN: 130-113-559
+2025-06-14 12:37:10,696 - __main__ - INFO - Filtered to 2226 items for optimization
+2025-06-14 12:37:10,745 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:10,775 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:10,779 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:10,780 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:11,450 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=427.46, Avg=-58332.47
+2025-06-14 12:37:11,459 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=396.52, Avg=-57027.30
+2025-06-14 12:37:11,473 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=419.81, Avg=-43991.79
+2025-06-14 12:37:11,577 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=405.28, Avg=-53666.42
+2025-06-14 12:37:11,676 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:11,680 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.98s
+2025-06-14 12:37:11,697 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:11,702 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.99s
+2025-06-14 12:37:11,789 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:11,835 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:11,905 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:11,909 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.20s
+2025-06-14 12:37:11,941 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.35, Avg=-62981.19
+2025-06-14 12:37:11,985 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=424.88, Avg=-55702.88
+2025-06-14 12:37:12,040 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,138 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:12,140 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.44s
+2025-06-14 12:37:12,152 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:12,157 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.47s
+2025-06-14 12:37:12,253 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=399.61, Avg=-53573.04
+2025-06-14 12:37:12,268 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,276 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,404 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:12,409 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.71s
+2025-06-14 12:37:12,459 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=428.01, Avg=-59439.34
+2025-06-14 12:37:12,472 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=423.46, Avg=-63240.50
+2025-06-14 12:37:12,531 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,601 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:12,606 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.70s
+2025-06-14 12:37:12,665 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:12,669 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.53s
+2025-06-14 12:37:12,678 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=411.02, Avg=-60578.78
+2025-06-14 12:37:12,742 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,794 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:12,872 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:12,877 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.72s
+2025-06-14 12:37:12,946 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=377.01, Avg=-65140.63
+2025-06-14 12:37:12,964 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=410.57, Avg=-57017.88
+2025-06-14 12:37:13,034 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:13,089 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:13,094 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.68s
+2025-06-14 12:37:13,131 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:13,136 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.47s
+2025-06-14 12:37:13,166 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=399.75, Avg=-58800.48
+2025-06-14 12:37:13,179 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:13,241 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:13,301 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:13,304 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.43s
+2025-06-14 12:37:13,325 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=390.58, Avg=-59452.05
+2025-06-14 12:37:13,396 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:13,399 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.79s
+2025-06-14 12:37:13,400 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=385.09, Avg=-61504.90
+2025-06-14 12:37:13,403 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:13,559 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:13,566 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=393.69, Avg=-61169.59
+2025-06-14 12:37:13,753 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:13,758 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.66s
+2025-06-14 12:37:13,790 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=420.27, Avg=-60500.29
+2025-06-14 12:37:13,886 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:14,000 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:14,005 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.60s
+2025-06-14 12:37:14,044 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=391.47, Avg=-59356.24
+2025-06-14 12:37:14,121 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:14,178 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:14,184 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.88s
+2025-06-14 12:37:14,283 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:14,305 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=396.71, Avg=-66944.10
+2025-06-14 12:37:14,408 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 5
+2025-06-14 12:37:14,413 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.28s
+2025-06-14 12:37:14,486 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=395.00, Avg=-61008.82
+2025-06-14 12:37:14,518 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:14,790 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=403.36, Avg=-59241.30
+2025-06-14 12:37:14,896 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:14,897 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:37:14,901 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.72s
+2025-06-14 12:37:14,906 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.90s
+2025-06-14 12:37:14,962 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 5
+2025-06-14 12:37:14,967 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.21s
+2025-06-14 12:37:14,985 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:14,992 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:15,046 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:15,175 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.48, Avg=-57455.81
+2025-06-14 12:37:15,188 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=418.77, Avg=-50430.87
+2025-06-14 12:37:15,230 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=416.56, Avg=-57617.09
+2025-06-14 12:37:15,385 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:15,389 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.48s
+2025-06-14 12:37:15,410 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:15,419 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.45s
+2025-06-14 12:37:15,446 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 4
+2025-06-14 12:37:15,452 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.04s
+2025-06-14 12:37:15,457 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:37:15,472 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:37:15,481 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.57s
+2025-06-14 12:37:15,504 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=401.12, Avg=-58571.18
+2025-06-14 12:37:15,542 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:37:15,546 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.16s
+2025-06-14 12:37:15,550 - __main__ - INFO - Generated 14 unique candidates from 25 total
+2025-06-14 12:37:15,558 - __main__ - INFO - Generated 10 recommendations in 4.86s
+2025-06-14 12:37:15,562 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 12:37:15] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-14 12:38:22,957 - __main__ - INFO - Filtered to 2226 items for optimization
+2025-06-14 12:38:23,011 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,029 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,078 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,110 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,201 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=405.45, Avg=-56403.94
+2025-06-14 12:38:23,206 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=392.76, Avg=-60578.42
+2025-06-14 12:38:23,233 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.28, Avg=-58373.23
+2025-06-14 12:38:23,326 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=391.89, Avg=-63435.16
+2025-06-14 12:38:23,649 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:23,654 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.70s
+2025-06-14 12:38:23,751 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:23,759 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.80s
+2025-06-14 12:38:23,811 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,812 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:23,901 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:38:23,905 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.93s
+2025-06-14 12:38:23,986 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=428.86, Avg=-59186.87
+2025-06-14 12:38:23,990 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=398.41, Avg=-60818.17
+2025-06-14 12:38:24,023 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,097 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 4
+2025-06-14 12:38:24,102 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.14s
+2025-06-14 12:38:24,214 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,297 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=403.87, Avg=-59475.43
+2025-06-14 12:38:24,369 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:24,374 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.72s
+2025-06-14 12:38:24,375 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=397.13, Avg=-65171.75
+2025-06-14 12:38:24,382 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 0
+2025-06-14 12:38:24,385 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.28s
+2025-06-14 12:38:24,566 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,575 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,578 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:38:24,586 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.83s
+2025-06-14 12:38:24,654 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:24,659 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.75s
+2025-06-14 12:38:24,682 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,691 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=397.34, Avg=-62241.86
+2025-06-14 12:38:24,703 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=393.13, Avg=-58430.00
+2025-06-14 12:38:24,760 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:24,864 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.54, Avg=-58789.74
+2025-06-14 12:38:25,002 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=406.36, Avg=-55003.68
+2025-06-14 12:38:25,105 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:25,110 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.73s
+2025-06-14 12:38:25,264 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:25,265 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:38:25,272 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.89s
+2025-06-14 12:38:25,410 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:25,416 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.76s
+2025-06-14 12:38:25,436 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:25,441 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 3
+2025-06-14 12:38:25,448 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.86s
+2025-06-14 12:38:25,462 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.97, Avg=-57126.65
+2025-06-14 12:38:25,526 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:25,587 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:25,590 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=393.25, Avg=-62802.21
+2025-06-14 12:38:25,660 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:25,663 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.55s
+2025-06-14 12:38:25,700 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=429.66, Avg=-58785.92
+2025-06-14 12:38:25,752 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=420.92, Avg=-59176.13
+2025-06-14 12:38:25,818 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:25,912 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:25,918 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.50s
+2025-06-14 12:38:25,924 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:25,935 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.48s
+2025-06-14 12:38:25,976 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=382.67, Avg=-63572.63
+2025-06-14 12:38:25,977 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 0
+2025-06-14 12:38:25,979 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.31s
+2025-06-14 12:38:26,004 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,020 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,102 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,220 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=418.12, Avg=-52032.92
+2025-06-14 12:38:26,222 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=425.17, Avg=-51767.97
+2025-06-14 12:38:26,268 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 4
+2025-06-14 12:38:26,272 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.00s
+2025-06-14 12:38:26,312 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=416.00, Avg=-58232.95
+2025-06-14 12:38:26,391 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,462 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:26,468 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.53s
+2025-06-14 12:38:26,527 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:26,533 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.55s
+2025-06-14 12:38:26,550 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,551 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=406.02, Avg=-56959.60
+2025-06-14 12:38:26,631 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:26,742 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=415.33, Avg=-59561.27
+2025-06-14 12:38:26,871 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=401.56, Avg=-59588.77
+2025-06-14 12:38:26,961 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:26,966 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.50s
+2025-06-14 12:38:26,977 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:26,981 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.71s
+2025-06-14 12:38:27,005 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 4
+2025-06-14 12:38:27,010 - modified_pso_algorithm_v1 - INFO - Optimization completed in 1.09s
+2025-06-14 12:38:27,036 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:27,084 - modified_pso_algorithm_v1 - INFO - Starting optimization for 2226 items...
+2025-06-14 12:38:27,163 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:27,168 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.63s
+2025-06-14 12:38:27,175 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=433.18, Avg=-60972.00
+2025-06-14 12:38:27,178 - modified_pso_algorithm_v1 - INFO - Iteration 0: Best=404.45, Avg=-56812.13
+2025-06-14 12:38:27,277 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 1
+2025-06-14 12:38:27,287 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.30s
+2025-06-14 12:38:27,324 - modified_pso_algorithm_v1 - INFO - Early stopping at iteration 2
+2025-06-14 12:38:27,328 - modified_pso_algorithm_v1 - INFO - Optimization completed in 0.36s
+2025-06-14 12:38:27,331 - __main__ - INFO - Generated 17 unique candidates from 25 total
+2025-06-14 12:38:27,343 - __main__ - INFO - Generated 10 recommendations in 4.39s
+2025-06-14 12:38:27,347 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 12:38:27] "POST /api/recommend HTTP/1.1" 200 -
