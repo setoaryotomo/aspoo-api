@@ -3785,3 +3785,25 @@
 2025-06-11 18:11:14,885 - __main__ - INFO - Generated 25 unique candidates from 25 total
 2025-06-11 18:11:14,898 - __main__ - INFO - Generated 10 recommendations in 2.05s
 2025-06-11 18:11:14,900 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 18:11:14] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-14 10:56:37,500 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-14 10:56:40,901 - __main__ - INFO - Loaded 2237 items successfully
+2025-06-14 10:56:40,902 - __main__ - INFO - Categories: 27
+2025-06-14 10:56:40,902 - __main__ - INFO - Produsen: 865
+2025-06-14 10:56:40,902 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-14 10:56:40,902 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-14 10:56:40,902 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-14 10:56:40,973 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-14 10:56:40,973 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-14 10:56:41,001 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-14 10:56:42,421 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-14 10:56:45,222 - __main__ - INFO - Loaded 2237 items successfully
+2025-06-14 10:56:45,229 - __main__ - INFO - Categories: 27
+2025-06-14 10:56:45,229 - __main__ - INFO - Produsen: 865
+2025-06-14 10:56:45,230 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-14 10:56:45,230 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-14 10:56:45,231 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-14 10:56:45,245 - werkzeug - WARNING -  * Debugger is active!
+2025-06-14 10:56:45,260 - werkzeug - INFO -  * Debugger PIN: 130-113-559
+2025-06-14 10:56:46,954 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 10:56:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-14 10:56:47,224 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 10:56:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
