@@ -4559,3 +4559,928 @@
 2025-06-14 12:38:27,331 - __main__ - INFO - Generated 17 unique candidates from 25 total
 2025-06-14 12:38:27,343 - __main__ - INFO - Generated 10 recommendations in 4.39s
 2025-06-14 12:38:27,347 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2025 12:38:27] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 15:43:49,438 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 15:43:52,502 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 15:43:52,505 - __main__ - INFO - Categories: 24
+2025-06-15 15:43:52,506 - __main__ - INFO - Produsen: 864
+2025-06-15 15:43:52,506 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 15:43:52,506 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 15:43:52,506 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 15:43:52,545 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-15 15:43:52,545 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 15:43:52,579 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-15 15:43:55,161 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 15:43:57,630 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 15:43:57,630 - __main__ - INFO - Categories: 24
+2025-06-15 15:43:57,630 - __main__ - INFO - Produsen: 864
+2025-06-15 15:43:57,630 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 15:43:57,630 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 15:43:57,630 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 15:43:57,656 - werkzeug - WARNING -  * Debugger is active!
+2025-06-15 15:43:57,687 - werkzeug - INFO -  * Debugger PIN: 767-449-018
+2025-06-15 15:46:14,964 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 15:46:15,030 - __main__ - INFO - Loaded 2237 items successfully
+2025-06-15 15:46:15,033 - __main__ - INFO - Categories: 27
+2025-06-15 15:46:15,033 - __main__ - INFO - Produsen: 865
+2025-06-15 15:46:15,035 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 15:46:15,035 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 15:46:15,035 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 15:46:15,070 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-15 15:46:15,070 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 15:46:15,097 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-15 15:46:17,333 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 15:46:17,397 - __main__ - INFO - Loaded 2237 items successfully
+2025-06-15 15:46:17,403 - __main__ - INFO - Categories: 27
+2025-06-15 15:46:17,403 - __main__ - INFO - Produsen: 865
+2025-06-15 15:46:17,404 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 15:46:17,404 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 15:46:17,404 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 15:46:17,422 - werkzeug - WARNING -  * Debugger is active!
+2025-06-15 15:46:17,423 - werkzeug - INFO -  * Debugger PIN: 767-449-018
+2025-06-15 15:47:18,298 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 15:47:18] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 15:47:18,308 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 15:47:23,000 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:23,017 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:23,133 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:23,149 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:23,233 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:23,383 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:23,478 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:23,533 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:23,535 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 15:47:23,917 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:23,918 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:24,023 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:24,131 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:24,168 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:24,364 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:24,817 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:24,869 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 15:47:25,017 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:25,069 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 15:47:25,235 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:25,369 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:25,501 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:25,618 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:25,618 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:47:25,648 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:47:25,652 - __main__ - INFO - Generated 24 unique candidates from 25 total
+2025-06-15 15:47:25,668 - __main__ - INFO - Generated 10 recommendations in 7.36s
+2025-06-15 15:47:25,672 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 15:47:25] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 15:59:13,151 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 15:59:13] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 15:59:13,162 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 15:59:13,442 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:13,660 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:13,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:13,943 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:14,311 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:14,492 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:14,512 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:14,563 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:15,129 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:15,276 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:15,392 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:15,409 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:15,643 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:15,678 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:15,694 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:15,695 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:15,978 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:16,144 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,175 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,195 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,393 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 15:59:16,580 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,609 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 15:59:16,612 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,660 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 15:59:16,662 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 15:59:16,679 - __main__ - INFO - Generated 10 recommendations in 3.52s
+2025-06-15 15:59:16,679 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 15:59:16] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:02:34,437 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\pymysql\\__init__.py', reloading
+2025-06-15 16:02:34,883 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-15 16:02:37,778 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 16:02:37,847 - __main__ - INFO - Loaded 2237 items successfully
+2025-06-15 16:02:37,850 - __main__ - INFO - Categories: 27
+2025-06-15 16:02:37,850 - __main__ - INFO - Produsen: 865
+2025-06-15 16:02:37,850 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 16:02:37,850 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 16:02:37,851 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 16:02:37,872 - werkzeug - WARNING -  * Debugger is active!
+2025-06-15 16:02:37,888 - werkzeug - INFO -  * Debugger PIN: 767-449-018
+2025-06-15 16:10:28,906 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:10:28] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:10:28,917 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:10:30,526 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:30,743 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:30,761 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:30,768 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,007 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:31,036 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,052 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:31,335 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,386 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:31,535 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,602 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,604 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:31,885 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:31,918 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:31,968 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,017 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,120 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:32,136 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:32,301 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:32,401 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,401 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:32,552 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,630 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:10:32,668 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,685 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:10:32,685 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:10:32,720 - __main__ - INFO - Generated 10 recommendations in 3.80s
+2025-06-15 16:10:32,720 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:10:32] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:12:20,238 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:12:20] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:12:20,254 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:12:20,771 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:20,789 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:20,893 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:20,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:21,176 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:21,239 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:21,470 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:21,487 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:12:21,688 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:21,689 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:21,742 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:21,797 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:22,183 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:22,330 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,351 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,432 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,702 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,809 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,813 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:22,852 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:23,036 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:23,070 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:23,086 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:12:23,119 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:23,186 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:12:23,202 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:12:23,204 - __main__ - INFO - Generated 10 recommendations in 2.95s
+2025-06-15 16:12:23,214 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:12:23] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:14:11,850 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:14:11] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:14:11,857 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:14:12,105 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:12,132 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:12,239 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,272 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,488 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:12,529 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,548 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,689 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,771 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:12,806 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:12,855 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:12,972 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:13,022 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,155 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,221 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:13,256 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,390 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,523 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,589 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,625 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,705 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,723 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:13,774 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:14:13,871 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:14:13,888 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:14:13,888 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:14:13,923 - __main__ - INFO - Generated 10 recommendations in 2.07s
+2025-06-15 16:14:13,923 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:14:13] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:53:33,973 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:53:33] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:53:33,996 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:53:34,407 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:34,424 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:34,539 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:34,622 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:34,672 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:34,800 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:34,939 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,024 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:35,040 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,074 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:35,139 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,340 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,456 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:35,724 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,739 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:35,774 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:35,956 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:35,973 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,990 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:35,995 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:36,206 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:36,222 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:36,324 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:36,324 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:36,390 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:36,390 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:53:36,407 - __main__ - INFO - Generated 10 recommendations in 2.41s
+2025-06-15 16:53:36,407 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:53:36] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:53:52,526 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:53:52] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:53:52,548 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:53:52,958 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:53,107 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:53,124 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:53,288 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:53,532 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:53,538 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:53,540 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:53,791 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:53,874 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:54,023 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,034 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,091 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:54,191 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,424 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,490 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,523 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:54,558 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,691 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:54,773 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,873 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:54,907 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:54,947 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:55,074 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:53:55,091 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:53:55,156 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:53:55,156 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:53:55,173 - __main__ - INFO - Generated 10 recommendations in 2.63s
+2025-06-15 16:53:55,173 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:53:55] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:56:06,378 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:56:06] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:56:06,402 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:56:06,893 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:06,991 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:06,992 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,010 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,225 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:07,277 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,359 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,392 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,526 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:07,608 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:07,630 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,794 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:07,827 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:07,892 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:08,110 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:08,226 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:56:08,259 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,312 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:08,325 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,441 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:08,627 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,693 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,708 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,775 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,826 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:08,826 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:56:08,841 - __main__ - INFO - Generated 10 recommendations in 2.44s
+2025-06-15 16:56:08,841 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:56:08] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:56:48,177 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:56:48] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 16:56:48,192 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 16:56:48,683 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:48,716 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:48,759 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:49,125 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:49,562 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:49,698 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:49,733 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:49,913 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:50,496 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:50,547 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:50,727 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:56:50,919 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:51,011 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 16:56:51,144 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:51,213 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:51,519 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:51,627 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:51,692 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:51,709 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:52,010 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:52,254 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 16:56:52,461 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:52,511 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:52,692 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:52,728 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 16:56:52,736 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 16:56:52,759 - __main__ - INFO - Generated 10 recommendations in 4.57s
+2025-06-15 16:56:52,766 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 16:56:52] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:00:08,799 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:00:08] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:00:08,817 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:00:09,366 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:09,551 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:09,584 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:09,609 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:09,830 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:10,063 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:10,246 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:10,347 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:10,361 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:10,670 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:10,745 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:10,901 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:00:10,964 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,295 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,330 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,345 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,362 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,545 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,580 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,713 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,729 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,764 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,930 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:00:11,937 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,945 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:00:11,945 - __main__ - INFO - Generated 23 unique candidates from 25 total
+2025-06-15 17:00:11,962 - __main__ - INFO - Generated 10 recommendations in 3.14s
+2025-06-15 17:00:11,962 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:00:11] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:09:59,312 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:09:59] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:09:59,320 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:09:59,486 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:09:59,503 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:09:59,603 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:09:59,653 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:09:59,687 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:09:59,774 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:09:59,855 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:09:59,907 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:09:59,907 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:09:59,971 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:10:00,203 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,253 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:10:00,270 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,287 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:10:00,470 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:10:00,504 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,555 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,586 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,619 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:10:00,771 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:10:00,788 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,853 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,955 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:00,970 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:10:01,005 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:10:01,005 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:10:01,022 - __main__ - INFO - Generated 10 recommendations in 1.70s
+2025-06-15 17:10:01,022 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:10:01] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:16:18,734 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:16:18] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:16:18,743 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:16:18,926 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:18,943 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,010 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,026 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,108 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,242 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,310 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,310 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,325 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,558 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,608 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,608 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,635 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:19,775 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,791 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,808 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:19,825 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,091 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,108 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,125 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,158 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,275 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:20,358 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:20,375 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:20,391 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:16:20,391 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:16:20,408 - __main__ - INFO - Generated 10 recommendations in 1.67s
+2025-06-15 17:16:20,408 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:16:20] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:16:28,864 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:16:28] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:16:28,869 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:16:29,093 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,093 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,210 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,226 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,276 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,425 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,542 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,576 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,608 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,776 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,792 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,810 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,844 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:29,992 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:29,992 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:30,158 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,208 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,325 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,342 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,475 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,509 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,525 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:16:30,624 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,692 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,725 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:16:30,725 - __main__ - INFO - Generated 24 unique candidates from 25 total
+2025-06-15 17:16:30,749 - __main__ - INFO - Generated 10 recommendations in 1.88s
+2025-06-15 17:16:30,749 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:16:30] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:19:30,995 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:19:30] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:19:31,012 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:19:31,311 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:31,445 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:31,461 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:31,478 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:31,645 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:31,661 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:31,678 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:31,746 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:31,996 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,029 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,046 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,080 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,328 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,328 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,344 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,395 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,562 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:32,628 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:32,628 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,761 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:19:32,861 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,893 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,928 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:19:32,978 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:19:32,978 - __main__ - INFO - Generated 23 unique candidates from 25 total
+2025-06-15 17:19:32,995 - __main__ - INFO - Generated 10 recommendations in 1.98s
+2025-06-15 17:19:32,995 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:19:32] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:22:03,797 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:22:03] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:22:03,814 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:22:03] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-06-15 17:23:46,417 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:46] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:23:46,424 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:46] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-06-15 17:23:49,314 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:49] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-06-15 17:23:51,739 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:51] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:23:51,748 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:51] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-06-15 17:23:54,073 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:23:54] "[31m[1mPOST /api/recommend HTTP/1.1[0m" 400 -
+2025-06-15 17:24:35,744 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:24:35] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:24:35,750 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:24:36,048 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,049 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,065 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,165 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:24:36,259 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:36,319 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,357 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,482 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,549 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:36,581 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,632 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,800 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,898 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,915 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:36,982 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,065 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:24:37,082 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,149 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,199 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:37,249 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,332 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,399 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:37,399 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,416 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:37,465 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:37,465 - __main__ - INFO - Generated 24 unique candidates from 25 total
+2025-06-15 17:24:37,482 - __main__ - INFO - Generated 10 recommendations in 1.73s
+2025-06-15 17:24:37,482 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:24:37] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:24:46,535 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:24:46] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:24:46,541 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:24:46,768 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:46,849 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:46,849 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:46,866 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,037 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:47,065 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:47,149 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,233 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:47,299 - modified_pso_algorithm - INFO - Stagnation reached at iteration 3
+2025-06-15 17:24:47,315 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:47,415 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:24:47,516 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,597 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,599 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,682 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:47,732 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:47,932 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,032 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,049 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:24:48,049 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,199 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,315 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,349 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,349 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:24:48,364 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:24:48,365 - __main__ - INFO - Generated 24 unique candidates from 25 total
+2025-06-15 17:24:48,365 - __main__ - INFO - Generated 10 recommendations in 1.82s
+2025-06-15 17:24:48,365 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:24:48] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:37:50,693 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:37:50] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:37:50,701 - __main__ - INFO - Filtered to 2229 items for optimization
+2025-06-15 17:37:51,044 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,061 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,061 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,077 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,260 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:51,394 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,394 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,411 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,444 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:51,610 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:51,610 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:51,860 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,927 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:37:51,944 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,960 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:51,994 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,144 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,260 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:52,294 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:52,311 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:52,327 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,460 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,493 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,494 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:37:52,527 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:37:52,527 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:37:52,544 - __main__ - INFO - Generated 10 recommendations in 1.84s
+2025-06-15 17:37:52,544 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:37:52] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:47:15,877 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:47:15] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:47:15,885 - __main__ - INFO - Filtered to 2235 items for optimization
+2025-06-15 17:47:16,106 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:16,235 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,252 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,335 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:47:16,453 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,585 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:16,585 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,585 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,785 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:16,802 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,885 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:16,985 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:17,002 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:47:17,052 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,085 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:17,202 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:17,285 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:17,302 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,386 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,519 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,585 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,619 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,685 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,685 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:47:17,736 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:47:17,736 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:47:17,752 - __main__ - INFO - Generated 10 recommendations in 1.87s
+2025-06-15 17:47:17,752 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:47:17] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:50:23,190 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:50:23] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:50:23,199 - __main__ - INFO - Filtered to 2235 items for optimization
+2025-06-15 17:50:23,425 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:50:23,442 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:50:23,538 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:23,555 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:23,771 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:23,771 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:23,905 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,004 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:50:24,072 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,088 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,205 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,305 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,373 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,373 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,588 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,605 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:50:24,655 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,671 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,755 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:50:24,921 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,972 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:24,972 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:25,055 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:50:25,088 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:50:25,122 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:50:25,122 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:50:25,138 - __main__ - INFO - Generated 10 recommendations in 1.94s
+2025-06-15 17:50:25,138 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:50:25] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:53:37,001 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:53:37] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 17:53:37,010 - __main__ - INFO - Filtered to 2235 items for optimization
+2025-06-15 17:53:37,309 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:37,312 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:37,378 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:53:37,394 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:53:37,603 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:37,624 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:37,624 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:37,624 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:37,807 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:37,840 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:37,934 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:37,965 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,012 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,174 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,174 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,264 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,357 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,452 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,457 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 17:53:38,457 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,520 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,607 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 17:53:38,755 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,786 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,802 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 17:53:38,802 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 17:53:38,817 - __main__ - INFO - Generated 10 recommendations in 1.81s
+2025-06-15 17:53:38,817 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 17:53:38] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:06:07,235 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:06:07] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:06:07,243 - __main__ - INFO - Filtered to 2233 items for optimization
+2025-06-15 18:06:07,456 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:07,459 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:07,572 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:07,639 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:07,684 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:06:07,852 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:07,869 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:07,885 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:06:07,885 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,069 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,085 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,102 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,218 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,352 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,385 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,468 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:06:08,502 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,518 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,702 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,769 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,785 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:06:08,802 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,918 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,918 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:06:08,935 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:06:08,935 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 18:06:08,952 - __main__ - INFO - Generated 10 recommendations in 1.71s
+2025-06-15 18:06:08,952 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:06:08] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:16:11,172 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:16:11] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:16:11,181 - __main__ - INFO - Filtered to 2235 items for optimization
+2025-06-15 18:16:11,377 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:11,377 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:11,448 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:11,469 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:11,681 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:11,714 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:11,727 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:11,844 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:16:11,994 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,027 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,027 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,193 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,244 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:12,344 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,378 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,544 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,544 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,677 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:12,711 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:16:12,744 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:16:12,944 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:16:12,994 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:13,028 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:13,044 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:16:13,094 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:16:13,094 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 18:16:13,111 - __main__ - INFO - Generated 10 recommendations in 1.93s
+2025-06-15 18:16:13,111 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:16:13] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:22:14,545 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 18:22:17,047 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 18:22:17,047 - __main__ - INFO - Categories: 24
+2025-06-15 18:22:17,047 - __main__ - INFO - Produsen: 864
+2025-06-15 18:22:17,047 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 18:22:17,047 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 18:22:17,047 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 18:22:17,110 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-15 18:22:17,110 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 18:22:17,125 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-15 18:22:18,482 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 18:22:21,226 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 18:22:21,226 - __main__ - INFO - Categories: 24
+2025-06-15 18:22:21,226 - __main__ - INFO - Produsen: 864
+2025-06-15 18:22:21,226 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 18:22:21,226 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 18:22:21,226 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 18:22:21,241 - werkzeug - WARNING -  * Debugger is active!
+2025-06-15 18:22:21,257 - werkzeug - INFO -  * Debugger PIN: 767-449-018
+2025-06-15 18:22:43,392 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:22:43] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:22:43,399 - __main__ - INFO - Filtered to 2226 items for optimization
+2025-06-15 18:22:45,733 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:45,749 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:45,749 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:45,766 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:45,966 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,049 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,066 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,100 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,299 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,333 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,366 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,383 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,533 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,583 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,583 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,766 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:22:46,783 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,800 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:46,833 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:46,983 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:47,049 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:47,066 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:47,066 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:47,183 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:22:47,183 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:22:47,199 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 18:22:47,199 - __main__ - INFO - Generated 10 recommendations in 3.80s
+2025-06-15 18:22:47,216 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:22:47] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:30:28,882 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:30:28] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:30:28,906 - __main__ - INFO - Filtered to 2226 items for optimization
+2025-06-15 18:30:29,211 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:29,378 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:29,494 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:30:29,511 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:30:29,593 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:29,610 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:29,828 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:29,847 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:29,850 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:29,917 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,011 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:30,027 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:30,027 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:30,223 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:30:30,270 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,349 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,380 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,571 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,606 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,653 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,684 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,825 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,884 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,915 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:30:30,931 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:30:30,931 - __main__ - INFO - Generated 25 unique candidates from 25 total
+2025-06-15 18:30:30,947 - __main__ - INFO - Generated 10 recommendations in 2.04s
+2025-06-15 18:30:30,947 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:30:30] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:35:05,135 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:35:05] "OPTIONS /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:35:05,144 - __main__ - INFO - Filtered to 2224 items for optimization
+2025-06-15 18:35:05,448 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,464 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,464 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,564 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:35:05,647 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:05,760 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,760 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:05,961 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:05,961 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,094 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:35:06,094 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,227 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,327 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:35:06,360 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,381 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,560 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,610 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,610 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:35:06,677 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,760 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,844 - modified_pso_algorithm - INFO - Stagnation reached at iteration 1
+2025-06-15 18:35:06,844 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 0
+2025-06-15 18:35:06,894 - modified_pso_algorithm - INFO - Stagnation reached at iteration 2
+2025-06-15 18:35:06,910 - __main__ - INFO - Generated 24 unique candidates from 25 total
+2025-06-15 18:35:06,910 - __main__ - INFO - Generated 10 recommendations in 1.77s
+2025-06-15 18:35:06,910 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2025 18:35:06] "POST /api/recommend HTTP/1.1" 200 -
+2025-06-15 18:39:31,474 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 18:39:34,260 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 18:39:34,260 - __main__ - INFO - Categories: 24
+2025-06-15 18:39:34,260 - __main__ - INFO - Produsen: 864
+2025-06-15 18:39:34,260 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 18:39:34,260 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 18:39:34,260 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 18:39:34,276 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-15 18:39:34,276 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 18:39:34,291 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-15 18:39:35,652 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-15 18:39:38,151 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-15 18:39:38,151 - __main__ - INFO - Categories: 24
+2025-06-15 18:39:38,151 - __main__ - INFO - Produsen: 864
+2025-06-15 18:39:38,151 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-15 18:39:38,151 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-15 18:39:38,151 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-15 18:39:38,166 - werkzeug - WARNING -  * Debugger is active!
+2025-06-15 18:39:38,182 - werkzeug - INFO -  * Debugger PIN: 767-449-018
+2025-06-16 12:57:52,844 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 12:57:55,796 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 12:57:55,796 - __main__ - INFO - Categories: 24
+2025-06-16 12:57:55,796 - __main__ - INFO - Produsen: 864
+2025-06-16 12:57:55,796 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 12:57:55,796 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 12:57:55,796 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 12:57:55,892 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-16 12:57:55,893 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 12:57:55,926 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-16 12:57:58,360 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 12:58:00,905 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 12:58:00,905 - __main__ - INFO - Categories: 24
+2025-06-16 12:58:00,905 - __main__ - INFO - Produsen: 864
+2025-06-16 12:58:00,905 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 12:58:00,905 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 12:58:00,905 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 12:58:00,937 - werkzeug - WARNING -  * Debugger is active!
+2025-06-16 12:58:00,937 - werkzeug - INFO -  * Debugger PIN: 120-204-810
+2025-06-16 12:58:25,428 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\__init__.py', reloading
+2025-06-16 12:58:25,561 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\errors.py', reloading
+2025-06-16 12:58:25,606 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\__init__.py', reloading
+2025-06-16 12:58:25,638 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\abstract.py', reloading
+2025-06-16 12:58:25,681 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\containers.py', reloading
+2025-06-16 12:58:25,800 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\functions.py', reloading
+2025-06-16 12:58:25,860 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\iterators.py', reloading
+2025-06-16 12:58:25,891 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\misc.py', reloading
+2025-06-16 12:58:25,935 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\npytypes.py', reloading
+2025-06-16 12:58:26,005 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\scalars.py', reloading
+2025-06-16 12:58:26,086 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\types\\function_type.py', reloading
+2025-06-16 12:58:26,135 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\core\\decorators.py', reloading
+2025-06-16 12:58:26,179 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numba\\misc\\special.py', reloading
+2025-06-16 12:58:26,673 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-16 12:58:29,543 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 12:58:32,236 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 12:58:32,236 - __main__ - INFO - Categories: 24
+2025-06-16 12:58:32,236 - __main__ - INFO - Produsen: 864
+2025-06-16 12:58:32,236 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 12:58:32,239 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 12:58:32,239 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 12:58:32,257 - werkzeug - WARNING -  * Debugger is active!
+2025-06-16 12:58:32,273 - werkzeug - INFO -  * Debugger PIN: 120-204-810
+2025-06-16 13:00:30,855 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\typing.py', reloading
+2025-06-16 13:00:31,663 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-16 13:00:33,573 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 13:00:36,122 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 13:00:36,125 - __main__ - INFO - Categories: 24
+2025-06-16 13:00:36,125 - __main__ - INFO - Produsen: 864
+2025-06-16 13:00:36,127 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 13:00:36,127 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 13:00:36,127 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 13:00:36,162 - werkzeug - WARNING -  * Debugger is active!
+2025-06-16 13:00:36,175 - werkzeug - INFO -  * Debugger PIN: 120-204-810
+2025-06-16 13:01:11,929 - werkzeug - INFO -  * Detected change in 'D:\\CODE\\PSO-OPTIMIZATION-PROJECT-main\\pso_project\\modified_pso_algorithm_v1.py', reloading
+2025-06-16 13:01:13,235 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-16 13:01:15,715 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 13:01:18,344 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 13:01:18,348 - __main__ - INFO - Categories: 24
+2025-06-16 13:01:18,348 - __main__ - INFO - Produsen: 864
+2025-06-16 13:01:18,350 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 13:01:18,351 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 13:01:18,351 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 13:01:18,378 - werkzeug - WARNING -  * Debugger is active!
+2025-06-16 13:01:18,379 - werkzeug - INFO -  * Debugger PIN: 120-204-810
+2025-06-16 13:02:51,252 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numpy\\__init__.py', reloading
+2025-06-16 13:02:52,396 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-16 13:02:54,234 - __main__ - INFO - Loading data from MySQL database (barang table)
+2025-06-16 13:02:56,694 - __main__ - INFO - Loaded 2228 items successfully
+2025-06-16 13:02:56,694 - __main__ - INFO - Categories: 24
+2025-06-16 13:02:56,694 - __main__ - INFO - Produsen: 864
+2025-06-16 13:02:56,697 - __main__ - INFO - Price range: Rp 2,000 - Rp 343,000
+2025-06-16 13:02:56,697 - __main__ - INFO - Recommendation service initialized successfully
+2025-06-16 13:02:56,697 - __main__ - INFO - Starting PSO Product Recommendation API with MySQL...
+2025-06-16 13:02:56,715 - werkzeug - WARNING -  * Debugger is active!
+2025-06-16 13:02:56,729 - werkzeug - INFO -  * Debugger PIN: 120-204-810

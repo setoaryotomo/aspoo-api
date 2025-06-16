@@ -44,6 +44,14 @@ MYSQL_CONFIG = {
     'port': 3307
 }
 
+# MYSQL_CONFIG = {
+#     'host': '127.0.0.1',
+#     'database': 'aspoo',
+#     'user': 'root',
+#     'port': 3306,
+#     'password': ''
+# }
+
 def load_items_from_mysql() -> List[Item]:
     """Load items from MySQL database"""
     items = []
