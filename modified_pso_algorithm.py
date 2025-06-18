@@ -106,7 +106,8 @@ def evaluate_single_knapsack_fitness(binary_selection: np.ndarray,
                                     budget: float, 
                                     weight_capacity: float,
                                     category_preferences: np.ndarray,
-                                    category_weight: float) -> float:
+                                    category_weight: float,
+                                    desired_filter_matches: np.ndarray) -> float:
     selected_items = binary_selection == 1
     if not np.any(selected_items):
         return 0.0
@@ -115,6 +116,7 @@ def evaluate_single_knapsack_fitness(binary_selection: np.ndarray,
     total_weight = np.sum(items_array[selected_items, 1])
     total_value = np.sum(items_array[selected_items, 2])
     
+    # Penalize solutions that exceed constraints
     if total_price > budget:
         price_violation = (total_price - budget) / budget
         return -1000.0 * price_violation
@@ -123,15 +125,18 @@ def evaluate_single_knapsack_fitness(binary_selection: np.ndarray,
         weight_violation = (total_weight - weight_capacity) / weight_capacity
         return -1000.0 * weight_violation
     
+    # Base fitness from total value
     fitness = total_value
     budget_utilization = total_price / budget if budget > 0 else 0
     weight_utilization = total_weight / weight_capacity if weight_capacity > 0 else 0
     
+    # Reward good utilization
     if 0.8 <= budget_utilization <= 0.95:
         fitness += total_value * 0.1
     if 0.8 <= weight_utilization <= 0.95:
         fitness += total_value * 0.1
     
+    # Category preference bonus
     if len(category_preferences) > 0:
         selected_categories = items_array[selected_items, 3]
         category_bonus = 0.0
@@ -140,15 +145,26 @@ def evaluate_single_knapsack_fitness(binary_selection: np.ndarray,
                 category_bonus += np.sum(selected_categories == cat_id) * 10
         fitness += category_bonus * category_weight
     
+    # Desired filter match bonus
+    if len(desired_filter_matches) > 0:
+        selected_matches = items_array[selected_items, 5]
+        if np.any(selected_matches == 1):
+            fitness += 100.0  # Significant bonus for including at least one desired filter match
+        else:
+            fitness -= 500.0  # Significant penalty for not including any desired filter match
+    
+    # Diversity bonus
     unique_categories = len(np.unique(items_array[selected_items, 3]))
-    fitness += unique_categories * 5
+    fitness += unique_categories * 10  # Increased weight for category diversity
+    
     return fitness
 
 @jit(nopython=True, cache=True)
 def repair_solution(binary_selection: np.ndarray, 
                    items_array: np.ndarray,
                    budget: float, 
-                   weight_capacity: float) -> np.ndarray:
+                   weight_capacity: float,
+                   desired_filter_matches: np.ndarray) -> np.ndarray:
     repaired = binary_selection.copy()
     selected_indices = np.where(repaired == 1)[0]
     if len(selected_indices) == 0:
@@ -157,14 +173,44 @@ def repair_solution(binary_selection: np.ndarray,
     current_price = np.sum(items_array[selected_indices, 0])
     current_weight = np.sum(items_array[selected_indices, 1])
     
+    # Ensure at least one item matches desired filters
+    has_desired = np.any(items_array[selected_indices, 5] == 1)
+    
     while (current_price > budget or current_weight > weight_capacity) and len(selected_indices) > 0:
         efficiencies = items_array[selected_indices, 4]
-        worst_idx_pos = np.argmin(efficiencies)
-        worst_item_idx = selected_indices[worst_idx_pos]
+        # Prefer to keep items that match desired filters
+        desired_mask = items_array[selected_indices, 5]
+        if has_desired and np.any(desired_mask == 1):
+            # Only remove non-desired items if possible
+            non_desired_indices = selected_indices[desired_mask == 0]
+            if len(non_desired_indices) > 0:
+                efficiencies = items_array[non_desired_indices, 4]
+                worst_idx_pos = np.argmin(efficiencies)
+                worst_item_idx = non_desired_indices[worst_idx_pos]
+            else:
+                worst_idx_pos = np.argmin(efficiencies)
+                worst_item_idx = selected_indices[worst_idx_pos]
+        else:
+            worst_idx_pos = np.argmin(efficiencies)
+            worst_item_idx = selected_indices[worst_idx_pos]
+        
         repaired[worst_item_idx] = 0
         current_price -= items_array[worst_item_idx, 0]
         current_weight -= items_array[worst_item_idx, 1]
-        selected_indices = np.delete(selected_indices, worst_idx_pos)
+        # Correctly remove worst_item_idx from selected_indices
+        idx_to_remove = np.where(selected_indices == worst_item_idx)[0]
+        if len(idx_to_remove) > 0:
+            selected_indices = np.delete(selected_indices, idx_to_remove[0])
+        has_desired = np.any(items_array[selected_indices, 5] == 1) if len(selected_indices) > 0 else False
+    
+    # If no desired items are selected, try to add one
+    if not has_desired:
+        desired_indices = np.where(items_array[:, 5] == 1)[0]
+        if len(desired_indices) > 0:
+            # Select a random desired item
+            add_idx = np.random.choice(desired_indices)
+            if items_array[add_idx, 0] + current_price <= budget and items_array[add_idx, 1] + current_weight <= weight_capacity:
+                repaired[add_idx] = 1
     
     return repaired
 
@@ -191,19 +237,36 @@ class CustomerRecommendationPSO:
                           format='%(asctime)s - %(levelname)s - %(message)s')
         return logging.getLogger(__name__)
     
-    def _preprocess_data(self, items: List[Item], customer_pref: CustomerPreference) -> Tuple[np.ndarray, Dict, np.ndarray]:
+    def _preprocess_data(self, items: List[Item], customer_pref: CustomerPreference, desired_filters: Dict) -> Tuple[np.ndarray, Dict, np.ndarray]:
         n_items = len(items)
         categories = list(set(item.category for item in items))
         category_map = {cat: i for i, cat in enumerate(categories)}
-        items_array = np.zeros((n_items, 5))
+        items_array = np.zeros((n_items, 6))
         for i, item in enumerate(items):
             cat_id = category_map.get(item.category, 0)
+            # Check if item matches any desired filter
+            matches_desired = 0
+            if desired_filters:
+                if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
+                    matches_desired = 1
+                elif desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
+                    matches_desired = 1
+                elif desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
+                    matches_desired = 1
+                elif desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
+                    matches_desired = 1
+                elif desired_filters.get('produsen') and item.store in desired_filters['produsen']:
+                    matches_desired = 1
+                elif desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
+                    matches_desired = 1
+            
             items_array[i] = [
                 item.price,
                 item.weight,
                 item.value,
                 cat_id,
-                item.efficiency_score
+                item.efficiency_score,
+                matches_desired
             ]
         
         preferred_category_ids = np.array([
@@ -230,7 +293,8 @@ class CustomerRecommendationPSO:
             customer_pref.budget,
             customer_pref.weight_capacity,
             np.array([i for i in range(len(set(item.category for item in items)))]),
-            customer_pref.category_weight
+            customer_pref.category_weight,
+            items_array[:, 5]  # Pass desired filter matches
         )
         
         budget_utilization = total_price / customer_pref.budget if customer_pref.budget > 0 else 0.0
@@ -250,8 +314,8 @@ class CustomerRecommendationPSO:
             store_diversity=store_diversity
         )
     
-    def optimize_single_recommendation(self, items: List[Item], customer_pref: CustomerPreference) -> RecommendationResult:
-        items_array, category_map, preferred_category_ids = self._preprocess_data(items, customer_pref)
+    def optimize_single_recommendation(self, items: List[Item], customer_pref: CustomerPreference, desired_filters: Dict) -> RecommendationResult:
+        items_array, category_map, preferred_category_ids = self._preprocess_data(items, customer_pref, desired_filters)
         num_items = len(items)
         
         particles = [SingleKnapsackParticle(num_items) for _ in range(self.n_particles)]
@@ -273,7 +337,8 @@ class CustomerRecommendationPSO:
                         binary_selection,
                         items_array,
                         customer_pref.budget,
-                        customer_pref.weight_capacity
+                        customer_pref.weight_capacity,
+                        items_array[:, 5]  # Pass desired filter matches
                     )
                 
                 fitness = evaluate_single_knapsack_fitness(
@@ -282,7 +347,8 @@ class CustomerRecommendationPSO:
                     customer_pref.budget,
                     customer_pref.weight_capacity,
                     preferred_category_ids,
-                    customer_pref.category_weight
+                    customer_pref.category_weight,
+                    items_array[:, 5]  # Pass desired filter matches
                 )
                 
                 particle.current_fitness = fitness
@@ -324,11 +390,11 @@ class CustomerRecommendationPSO:
             customer_pref
         )
     
-    def optimize(self, items: List[Item], customer_pref: CustomerPreference) -> List[RecommendationResult]:
+    def optimize(self, items: List[Item], customer_pref: CustomerPreference, desired_filters: Dict) -> List[RecommendationResult]:
         results = []
         with ThreadPoolExecutor(max_workers=mp.cpu_count()) as executor:
             futures = [
-                executor.submit(self.optimize_single_recommendation, items, customer_pref)
+                executor.submit(self.optimize_single_recommendation, items, customer_pref, desired_filters)
                 for _ in range(self.target_recommendations)
             ]
             for future in futures:

@@ -44,14 +44,6 @@ MYSQL_CONFIG = {
     'port': 3307
 }
 
-# MYSQL_CONFIG = {
-#     'host': '127.0.0.1',
-#     'database': 'aspoo',
-#     'user': 'root',
-#     'port': 3306,
-#     'password': ''
-# }
-
 def load_items_from_mysql() -> List[Item]:
     """Load items from MySQL database"""
     items = []
@@ -84,7 +76,8 @@ def load_items_from_mysql() -> List[Item]:
                     store=row['produsen'] or '',
                     bahan_dasar=row['bahan_dasar'] or '',
                     basah_kering=row['basah_kering'] or '',
-                    rasa=row['rasa'] or ''
+                    rasa=row['rasa'] or '',
+                    value=float(row['harga_umum']) / max(float(row['berat']), 1e-6)  # Calculate value dynamically
                 ))
         
         connection.close()
@@ -100,7 +93,7 @@ def load_items_from_mysql() -> List[Item]:
 class AdvancedDiversitySelector:
     """Advanced diversity selection with multiple algorithms"""
     
-    def __init__(self, diversity_weight: float = 0.5):
+    def __init__(self, diversity_weight: float = 0.6):
         self.diversity_weight = diversity_weight
         
     def select_diverse_recommendations(self, 
@@ -248,7 +241,7 @@ class RecommendationService:
                 return {
                     "error": "No items found matching your criteria",
                     "status": "failed",
-                    "suggestions": "Try increasing budget or weight capacity"
+                    "suggestions": "Try relaxing desired filters or removing unwanted filters"
                 }
             
             logger.info(f"Filtered to {len(filtered_items)} items for optimization")
@@ -261,17 +254,27 @@ class RecommendationService:
             )
             
             start_time = time.time()
-            candidate_recommendations = self._generate_candidate_pool(filtered_items, customer_pref)
+            candidate_recommendations = self._generate_candidate_pool(filtered_items, customer_pref, desired_filters)
             final_recommendations = self.diversity_selector.select_diverse_recommendations(
                 candidate_recommendations, target_count=10
             )
             end_time = time.time()
+
+            # Verify recommendations match filters
+            valid_recommendations = self._verify_recommendations(final_recommendations, desired_filters, unwanted_filters)
+            
+            if not valid_recommendations:
+                return {
+                    "error": "No valid recommendations generated matching all filter criteria",
+                    "status": "failed",
+                    "suggestions": "Try relaxing desired filters or removing unwanted filters"
+                }
             
             response = {
                 "status": "success",
                 "generation_time": round(end_time - start_time, 2),
                 "total_candidates_generated": len(candidate_recommendations),
-                "recommendations_returned": len(final_recommendations),
+                "recommendations_returned": len(valid_recommendations),
                 "customer_preferences": {
                     "budget": customer_pref.budget,
                     "weight_capacity": customer_pref.weight_capacity,
@@ -281,10 +284,10 @@ class RecommendationService:
                     "total_items_available": len(self.items),
                     "items_matching_criteria": len(filtered_items)
                 },
-                "recommendations": [rec.to_dict() for rec in final_recommendations]
+                "recommendations": [rec.to_dict() for rec in valid_recommendations]
             }
             
-            logger.info(f"Generated {len(final_recommendations)} recommendations in {end_time - start_time:.2f}s")
+            logger.info(f"Generated {len(valid_recommendations)} valid recommendations in {end_time - start_time:.2f}s")
             return response
             
         except Exception as e:
@@ -316,19 +319,7 @@ class RecommendationService:
             if item.price > customer_pref.budget or item.weight > customer_pref.weight_capacity:
                 continue
             
-            # Apply desired filters
-            if desired_filters.get('bahan_dasar') and item.bahan_dasar not in desired_filters['bahan_dasar']:
-                continue
-            if desired_filters.get('basah_kering') and item.basah_kering not in desired_filters['basah_kering']:
-                continue
-            if desired_filters.get('rasa') and item.rasa not in desired_filters['rasa']:
-                continue
-            if desired_filters.get('produsen') and item.store not in desired_filters['produsen']:
-                continue
-            if desired_filters.get('nama_barang') and item.name not in desired_filters['nama_barang']:
-                continue
-            
-            # Apply unwanted filters
+            # Unwanted filters: NONE should match
             if unwanted_filters.get('kategori_umum') and item.category in unwanted_filters['kategori_umum']:
                 continue
             if unwanted_filters.get('bahan_dasar') and item.bahan_dasar in unwanted_filters['bahan_dasar']:
@@ -342,13 +333,77 @@ class RecommendationService:
             if unwanted_filters.get('nama_barang') and item.name in unwanted_filters['nama_barang']:
                 continue
             
-            filtered.append(item)
+            # Desired filters: Allow item if it matches at least one desired attribute
+            matches_desired = not desired_filters  # If no desired filters, include item
+            if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
+                matches_desired = True
+            elif desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
+                matches_desired = True
+            elif desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
+                matches_desired = True
+            elif desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
+                matches_desired = True
+            elif desired_filters.get('produsen') and item.store in desired_filters['produsen']:
+                matches_desired = True
+            elif desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
+                matches_desired = True
+            
+            if matches_desired:
+                filtered.append(item)
         
         return filtered
     
+    def _verify_recommendations(self, recommendations: List[RecommendationResult], desired_filters: Dict, unwanted_filters: Dict) -> List[RecommendationResult]:
+        """Verify that recommendations strictly adhere to desired and unwanted filters"""
+        valid_recommendations = []
+        
+        for rec in recommendations:
+            is_valid = False
+            for item in rec.items:
+                # Check unwanted filters
+                if unwanted_filters.get('kategori_umum') and item.category in unwanted_filters['kategori_umum']:
+                    is_valid = False
+                    break
+                if unwanted_filters.get('bahan_dasar') and item.bahan_dasar in unwanted_filters['bahan_dasar']:
+                    is_valid = False
+                    break
+                if unwanted_filters.get('basah_kering') and item.basah_kering in unwanted_filters['basah_kering']:
+                    is_valid = False
+                    break
+                if unwanted_filters.get('rasa') and item.rasa in unwanted_filters['rasa']:
+                    is_valid = False
+                    break
+                if unwanted_filters.get('produsen') and item.store in unwanted_filters['produsen']:
+                    is_valid = False
+                    break
+                if unwanted_filters.get('nama_barang') and item.name in unwanted_filters['nama_barang']:
+                    is_valid = False
+                    break
+                
+                # Check if at least one item matches a desired filter
+                if not is_valid and desired_filters:
+                    if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
+                        is_valid = True
+                    elif desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
+                        is_valid = True
+                    elif desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
+                        is_valid = True
+                    elif desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
+                        is_valid = True
+                    elif desired_filters.get('produsen') and item.store in desired_filters['produsen']:
+                        is_valid = True
+                    elif desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
+                        is_valid = True
+            
+            if is_valid or not desired_filters:  # If no desired filters, accept if no unwanted filters are matched
+                valid_recommendations.append(rec)
+        
+        return valid_recommendations
+    
     def _generate_candidate_pool(self, 
                                items: List[Item], 
-                               customer_pref: CustomerPreference) -> List[RecommendationResult]:
+                               customer_pref: CustomerPreference,
+                               desired_filters: Dict) -> List[RecommendationResult]:
         candidates = []
         max_candidates = 25
         
@@ -363,7 +418,7 @@ class RecommendationService:
                 )
                 future = executor.submit(
                     self.optimizer.optimize_single_recommendation,
-                    items, modified_pref
+                    items, modified_pref, desired_filters
                 )
                 futures.append(future)
             
@@ -548,19 +603,20 @@ def api_documentation():
                         "preferred_categories": ["Abon", "Keripik"],
                         "category_weight": 0.15,
                         "desired_filters": {
-                            "bahan_dasar": ["Tepung"],
+                            "kategori_umum": ["Abon", "Keripik"],
+                            "bahan_dasar": ["Ayam", "Keju"],
                             "basah_kering": ["Kering"],
-                            "rasa": ["Manis"],
-                            "produsen": ["Store A"],
-                            "nama_barang": ["Bakpia A"]
+                            "rasa": ["Gurih", "Asin"],
+                            "produsen": ["Gemini"],
+                            "nama_barang": ["Wingko Cap Jago"]
                         },
                         "unwanted_filters": {
-                            "kategori_umum": ["Emping"],
-                            "bahan_dasar": ["Kacang"],
-                            "basah_kering": ["Basah"],
-                            "rasa": ["Asin"],
-                            "produsen": ["Store B"],
-                            "nama_barang": ["Emping B"]
+                            "kategori_umum": ["Sirup"],
+                            "bahan_dasar": ["Bandeng"],
+                            "basah_kering": ["Cair"],
+                            "rasa": ["Pahit"],
+                            "produsen": ["Jaya Snack"],
+                            "nama_barang": ["Moci Rahma"]
                         }
                     }
                 },

@@ -1,0 +1,4 @@
+# nixpacks.toml
+
+[start]
+cmd = "gumicorn app:flask_api_system_mysql"
