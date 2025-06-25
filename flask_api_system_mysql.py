@@ -315,6 +315,16 @@ class RecommendationService:
     
     def _filter_items(self, customer_pref: CustomerPreference, desired_filters: Dict, unwanted_filters: Dict) -> List[Item]:
         filtered = []
+        # Track item IDs that match each desired filter type
+        desired_filter_matches = {
+            'kategori_umum': set(),
+            'bahan_dasar': set(),
+            'basah_kering': set(),
+            'rasa': set(),
+            'produsen': set(),
+            'nama_barang': set()
+        }
+        
         for item in self.items:
             if item.price > customer_pref.budget or item.weight > customer_pref.weight_capacity:
                 continue
@@ -333,23 +343,27 @@ class RecommendationService:
             if unwanted_filters.get('nama_barang') and item.name in unwanted_filters['nama_barang']:
                 continue
             
-            # Desired filters: Allow item if it matches at least one desired attribute
-            matches_desired = not desired_filters  # If no desired filters, include item
+            # Track matches for desired filters using item IDs
             if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
-                matches_desired = True
-            elif desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
-                matches_desired = True
-            elif desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
-                matches_desired = True
-            elif desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
-                matches_desired = True
-            elif desired_filters.get('produsen') and item.store in desired_filters['produsen']:
-                matches_desired = True
-            elif desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
-                matches_desired = True
+                desired_filter_matches['kategori_umum'].add(item.id)
+            if desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
+                desired_filter_matches['bahan_dasar'].add(item.id)
+            if desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
+                desired_filter_matches['basah_kering'].add(item.id)
+            if desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
+                desired_filter_matches['rasa'].add(item.id)
+            if desired_filters.get('produsen') and item.store in desired_filters['produsen']:
+                desired_filter_matches['produsen'].add(item.id)
+            if desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
+                desired_filter_matches['nama_barang'].add(item.id)
             
-            if matches_desired:
-                filtered.append(item)
+            filtered.append(item)
+        
+        # Ensure at least one item exists for each non-empty desired filter
+        for filter_type, matches in desired_filters.items():
+            if matches and not desired_filter_matches[filter_type]:
+                logger.warning(f"No items found matching desired filter {filter_type}: {matches}")
+                return []
         
         return filtered
     
@@ -358,44 +372,63 @@ class RecommendationService:
         valid_recommendations = []
         
         for rec in recommendations:
-            is_valid = False
+            # Check unwanted filters
+            has_unwanted = False
             for item in rec.items:
-                # Check unwanted filters
                 if unwanted_filters.get('kategori_umum') and item.category in unwanted_filters['kategori_umum']:
-                    is_valid = False
+                    has_unwanted = True
                     break
                 if unwanted_filters.get('bahan_dasar') and item.bahan_dasar in unwanted_filters['bahan_dasar']:
-                    is_valid = False
+                    has_unwanted = True
                     break
                 if unwanted_filters.get('basah_kering') and item.basah_kering in unwanted_filters['basah_kering']:
-                    is_valid = False
+                    has_unwanted = True
                     break
                 if unwanted_filters.get('rasa') and item.rasa in unwanted_filters['rasa']:
-                    is_valid = False
+                    has_unwanted = True
                     break
                 if unwanted_filters.get('produsen') and item.store in unwanted_filters['produsen']:
-                    is_valid = False
+                    has_unwanted = True
                     break
                 if unwanted_filters.get('nama_barang') and item.name in unwanted_filters['nama_barang']:
-                    is_valid = False
+                    has_unwanted = True
                     break
-                
-                # Check if at least one item matches a desired filter
-                if not is_valid and desired_filters:
-                    if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
-                        is_valid = True
-                    elif desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
-                        is_valid = True
-                    elif desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
-                        is_valid = True
-                    elif desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
-                        is_valid = True
-                    elif desired_filters.get('produsen') and item.store in desired_filters['produsen']:
-                        is_valid = True
-                    elif desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
-                        is_valid = True
             
-            if is_valid or not desired_filters:  # If no desired filters, accept if no unwanted filters are matched
+            if has_unwanted:
+                continue
+            
+            # Check that each desired filter type is represented
+            desired_filter_coverage = {
+                'kategori_umum': False,
+                'bahan_dasar': False,
+                'basah_kering': False,
+                'rasa': False,
+                'produsen': False,
+                'nama_barang': False
+            }
+            
+            for item in rec.items:
+                if desired_filters.get('kategori_umum') and item.category in desired_filters['kategori_umum']:
+                    desired_filter_coverage['kategori_umum'] = True
+                if desired_filters.get('bahan_dasar') and item.bahan_dasar in desired_filters['bahan_dasar']:
+                    desired_filter_coverage['bahan_dasar'] = True
+                if desired_filters.get('basah_kering') and item.basah_kering in desired_filters['basah_kering']:
+                    desired_filter_coverage['basah_kering'] = True
+                if desired_filters.get('rasa') and item.rasa in desired_filters['rasa']:
+                    desired_filter_coverage['rasa'] = True
+                if desired_filters.get('produsen') and item.store in desired_filters['produsen']:
+                    desired_filter_coverage['produsen'] = True
+                if desired_filters.get('nama_barang') and item.name in desired_filters['nama_barang']:
+                    desired_filter_coverage['nama_barang'] = True
+            
+            # Ensure all non-empty desired filters are covered
+            all_filters_covered = True
+            for filter_type, covered in desired_filter_coverage.items():
+                if desired_filters.get(filter_type) and not covered:
+                    all_filters_covered = False
+                    break
+            
+            if all_filters_covered:
                 valid_recommendations.append(rec)
         
         return valid_recommendations
@@ -603,8 +636,8 @@ def api_documentation():
                         "preferred_categories": ["Abon", "Keripik"],
                         "category_weight": 0.15,
                         "desired_filters": {
-                            "kategori_umum": ["Abon", "Keripik"],
-                            "bahan_dasar": ["Ayam", "Keju"],
+                            "kategori_umum": ["Abon", "Jenang"],
+                            "bahan_dasar": ["Bakso"],
                             "basah_kering": ["Kering"],
                             "rasa": ["Gurih", "Asin"],
                             "produsen": ["Gemini"],
